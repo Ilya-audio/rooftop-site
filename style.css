@@ -1,0 +1,232 @@
+/* 1. БАЗОВЫЕ НАСТРОЙКИ (Общие для всех страниц) */
+html {
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eeeeee;
+}
+
+/* 2. ГЛАВНАЯ СТРАНИЦА-ЗАСТАВКА (Выбор языка) */
+body.splash-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 3. ЛЕНДИНГ (Страница с плагинами) */
+body.landing-page {
+    display: block; 
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.landing-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 4. ШАПКА И ЛОГОТИП */
+.hero {
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-logo {
+    display: block;
+    margin: 0 auto 1rem auto; 
+    width: 280px;                
+    max-width: 90%;
+    height: auto;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin: 0 0 4rem 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 1.2;
+    display: inline-flex;    
+    align-items: baseline;   
+    padding-left: 97px;
+}
+
+.sub-title {
+    color: #00adb5;           
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-left: 12px;       
+    width: 90px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #888;
+    margin-top: -30px;   
+    letter-spacing: 1px;
+}
+
+.section-hero-image {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin: 0 auto 50px auto;
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.15)); 
+    transition: all 0.5s ease;
+}
+
+.section-hero-image:hover {
+    transform: translateY(-10px) scale(1.02);
+    filter: drop-shadow(0 0 29px rgba(255, 255, 255, 0.4));
+}
+
+/* 5. СЕКЦИИ И КАРТОЧКИ */
+.section {
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    color: #00adb5;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.project-card {
+    background: #222;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    width: 100%;
+    max-width: 700px;    
+    box-sizing: border-box;
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.format-tag {
+    font-size: 0.8rem;
+    border: 1px solid #00adb5;
+    color: #00adb5;
+    padding: 2px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+/* 6. КНОПКИ */
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;           
+    margin-top: 25px;
+    flex-wrap: wrap;     
+}
+
+.btn {
+    display: inline-block;
+    width: 220px;
+    padding: 16px 0;
+    text-decoration: none; 
+    color: #eeeeee;
+    border: 2px solid #00adb5;
+    border-radius: 10px;    
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: #00adb5;
+    color: #1a1a1a;
+    transform: translateY(-4px); 
+    box-shadow: 0 8px 20px rgba(0, 173, 181, 0.5);
+}
+
+.btn-small {
+    display: inline-block;
+    min-width: 160px;
+    padding: 12px 25px;
+    border: 2px solid #00adb5;
+    color: #eeeeee;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-small:hover {
+    background-color: #00adb5;
+    color: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+/* 7. ТЕКСТ И ФУТЕР */
+.bio-text {
+    max-width: 750px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+footer {
+    border-top: 1px solid #333;
+    padding: 40px 0;
+    width: 100%;
+    color: #444;
+}
